@@ -15,7 +15,7 @@ export default function SEO({
    shouldExcludeTitleSuffix = false, 
    shouldIndexPage = true 
 }: ISEOProps) {
-   const pageTitle = `${title} ${shouldExcludeTitleSuffix ? '' : '| DevCommerce'}`;
+   const pageTitle = `${title} ${shouldExcludeTitleSuffix ? '' : '| DevEric'}`;
    const pageImage = image ? `${process.env.NEXT_PUBLIC_SITE_URL}/${image}` : null;
 
    return (
@@ -25,7 +25,7 @@ export default function SEO({
          { description && <meta name="description" content={description} /> }
          { pageImage && <meta name="image" content={pageImage} /> }
 
-         {/* Essa meta tag se passada como FALSE, não é indexada pelos motores de buscas */}
+         {/* If false value, the page is not indexed by search engines  */}
          { !shouldIndexPage && <meta name="robots" content="noindex,nofollow" /> }
 
          <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
@@ -49,6 +49,7 @@ export default function SEO({
          <meta property="og:image:width" content="1200" />
          <meta property="og:image:height" content="630" />
 
+         {/* by Rocketseat */}
          <meta name="twitter:title" content={pageTitle} />
          <meta name="twitter:card" content="summary_large_image" />
          <meta name="twitter:site" content="@rocketseat" />

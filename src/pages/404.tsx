@@ -1,10 +1,10 @@
-import { Title } from '@/styles/pages/Home';
+import { Title, Message, DivPage } from '@/styles/pages/404';
 
 export default function NotFound() {
    return (
-      <div>
+      <DivPage>
          <Title>404 - Page not found</Title>
-         <p>This page could not be found.</p>
-      </div>
+         <Message>This page could not be found.</Message>
+      </DivPage>
    )
 }
