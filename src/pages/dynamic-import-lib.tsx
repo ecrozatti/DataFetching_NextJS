@@ -1,51 +1,23 @@
-import { GetServerSideProps } from 'next';
-import { Title } from '@/styles/pages/Home';
+import { Title, DivPage, Button } from '@/styles/pages/dynamic-import-lib';
 // import math from '../lib/math'
 
-interface IProduct {
-  id: string;
-  title: string;
-}
+import SEO from '@/components/SEO';
 
-interface HomeProps {
-  recommendedProducts: IProduct[];
-}
-
-export default function DynamicImportLib({ recommendedProducts }: HomeProps) {
+export default function DynamicImportLib() {
   async function handleSum() {
     const math = (await import('../lib/math')).default;   // --> // The lib uses "export default"
 
-    alert("Sum: " + math.sum(3, 7));
+    alert("SUM ----> 3 + 7 = " + math.sum(3, 7));
   }
 
   return (
-    <div>
-      <section>
-        <Title>Products </Title>
-
-        <ul>
-          {recommendedProducts.map(product => {
-            return (
-              <li key={product.id}>
-                {product.title}
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-
-      <button onClick={handleSum}>Sum</button>
-    </div>
+    <DivPage>
+      <SEO 
+        title="Dynamic Import" 
+        shouldExcludeTitleSuffix={false}
+      />
+      <Title>Dynamic Import Lib</Title>
+      <Button onClick={handleSum}>Click here to import</Button>
+    </DivPage>
   )
-}
-
-export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/recommended`)
-  const recommendedProducts = await response.json();
-
-  return {
-    props: {
-      recommendedProducts
-    }
-  }
 }

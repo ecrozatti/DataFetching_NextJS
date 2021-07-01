@@ -1,43 +1,44 @@
-import { GetServerSideProps } from 'next';
-import { Title } from '@/styles/pages/Home';
+import Link from 'next/link';
+import { Title, DivPage, Button } from '@/styles/pages/Home';
 
-interface IProduct {
-  id: string;
-  title: string;
-}
+import SEO from '@/components/SEO';
 
-interface HomeProps {
-  recommendedProducts: IProduct[];
-}
-
-export default function Home({ recommendedProducts }: HomeProps) {
+export default function Home() {
   return (
-    <div>
-      <section>
-        <Title>Server Side Rendering with Next.js</Title>
-        <h1>Products</h1>
+    <DivPage>
+        <SEO 
+          title="Home" 
+          shouldExcludeTitleSuffix={false}
+        />
 
-        <ul>
-          {recommendedProducts.map(product => {
-            return (
-              <li key={product.id}>
-                {product.title}
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-    </div>
+        <Title>Next.js Data Fetching</Title>
+        
+        <Link href="/client-side-fetching">
+          <Button>Client Side Fetching</Button>
+        </Link>
+
+        <Link href="/server-side-rendering">
+          <Button>Server Side Rendering</Button>
+        </Link>
+
+        <Link href="/static-site-generation">
+          <Button>Static Site Generation</Button>
+        </Link>
+
+        <Title>Extras</Title>
+
+        <Link href="/dynamic-import-lib">
+          <Button>Dynamic Import Lib</Button>
+        </Link>
+
+        <Link href="/lazy-load">
+          <Button>Lazy Load</Button>
+        </Link>
+
+        <Link href="/invalid-url">
+          <Button>Custom 404 Error</Button>
+        </Link>
+
+    </DivPage>
   )
-}
-
-export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/recommended`)
-  const recommendedProducts = await response.json();
-
-  return {
-    props: {
-      recommendedProducts
-    }
-  }
 }

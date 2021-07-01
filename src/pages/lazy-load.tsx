@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import { useState } from "react";
-import { Title, MessageAPI, Message, DivPage, DivProducts } from '@/styles/pages/lazy-load';
+import { Title, Message, DivPage, Button } from '@/styles/pages/lazy-load';
 
 import SEO from '@/components/SEO';
 
@@ -12,22 +12,21 @@ const DynamicComponent = dynamic(
 export default function LazyLoad() {
    const [isAddComponent, setIsAddComponent] = useState(false);
 
-   function handleAddToCart() {
-      setIsAddComponent(true);
+   function handleShowComponent() {
+      setIsAddComponent(!isAddComponent);
    }
 
    return (
       <DivPage>
          <SEO 
-            title="Server Side Rendering" 
-            image="image.png"
+            title="Lazy Load" 
             shouldExcludeTitleSuffix={false}
          />
 
          <section>
             <Title>Lazy Load with Next.js</Title>
             <Message>- The component is dynamically loaded</Message>
-            <button onClick={handleAddToCart}>Show component</button>
+            <Button onClick={handleShowComponent}>Show Component</Button>
             { isAddComponent && <DynamicComponent /> }
          </section>
       </DivPage>
