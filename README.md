@@ -50,11 +50,22 @@ Project developed with the following technologies:
   # Install dependencies:
   $ yarn install
   
-  # Run the fake server with 2 seconds delay
+  # Run the fake server with 2 seconds delay:
   npx json-server server.json -p 3333 -w -d 2000
 
-  # Run application:
-  $ yarn dev
+  # Build application:
+  $ yarn build
+  
+  # Start application:
+  $ yarn start
 ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
 
 Made with 💚 by [Eric Crozatti Ferreira](https://www.linkedin.com/in/eric-crozatti-1447688a/)
