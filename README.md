@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <img alt="NextJS-logo" src="https://github.com/ecrozatti/DataFetching_NextJS/blob/main/.github/nextjs.png" width="250px" />
+</h1>
 
-## Getting Started
+<p align="center">
+  <a href="#page_with_curl-sobre">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-requisitos">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-começando">Getting Started</a>
+</p>
 
-First, run the development server:
+<h1 align="center">
+    <img alt="DataFetching-NextJS" src="https://github.com/ecrozatti/DataFetching_NextJS/blob/main/.github/application.png" width="600px"/>
+</h1>
 
-```bash
-npm run dev
-# or
-yarn dev
+## :page_with_curl: About
+![GitHub language count](https://img.shields.io/github/languages/count/ecrozatti/DataFetching_NextJS)
+![GitHub top language](https://img.shields.io/github/languages/top/ecrozatti/DataFetching_NextJS)
+![GitHub repo size](https://img.shields.io/github/repo-size/ecrozatti/DataFetching_NextJS)
+![GitHub](https://img.shields.io/github/license/ecrozatti/DataFetching_NextJS)
+![GitHub last commit](https://img.shields.io/github/last-commit/ecrozatti/DataFetching_NextJS)
+
+Simple project developed during the studies of the Next.js framework.
+
+The project demonstrates different types of data fetching and dynamic import using Next.js. Additionally, there is a custom 404 error page.
+
+See instructions on each page of the project.
+
+## :computer: Technologies
+Project developed with the following technologies:
+
+- [ReactJS](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [JSON Server](https://github.com/typicode/json-server)
+- [Styled Components](https://styled-components.com/)
+- [Eslint](https://eslint.org/)
+
+## :books: Requirements
+- [**Git**](https://git-scm.com/) to clone the project.
+
+## :rocket: Getting Started
+``` bash
+  # Clone the project:
+  $ git clone https://github.com/ecrozatti/GoBarBer_Web.git
+
+  # Navigate to the directory:
+  $ cd DataFetching_NextJS
+  
+  # Install dependencies:
+  $ yarn install
+  
+  # Run the fake server with 2 seconds delay
+  npx json-server server.json -p 3333 -w -d 2000
+
+  # Run application:
+  $ yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Made with 💚 by [Eric Crozatti Ferreira](https://www.linkedin.com/in/eric-crozatti-1447688a/)
