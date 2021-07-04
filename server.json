@@ -1,21 +1,23 @@
 {
    "categories": [
-     { "id": "camisetas", "title": "Camisetas" },
-     { "id": "calcas", "title": "Calças" },
-     { "id": "tenis", "title": "Tênis" },
-     { "id": "meias", "title": "Meias" }
+      { "id": "tshirt", "title": "Camisetas" },
+      { "id": "pants", "title": "Calças" },
+      { "id": "sneakers", "title": "Tênis" }
    ],
    "products": [
-     { "id": 1, "title": "Camiseta Front-end", "price": 79.9, "category_id": "camisetas", "slug": "camiseta-front-ends"},
-     { "id": 2, "title": "Camiseta CSharpolin", "price": 69.9, "category_id": "camisetas", "slug": "camiseta-csharpolin"},
-     { "id": 3, "title": "Calça preta back-end", "price": 129.9, "category_id": "calcas", "slug": "calca-preta-back-end"},
-     { "id": 4, "title": "Calça azul do React", "price": 109.9, "category_id": "calcas", "slug": "calca-azul-react"},
-     { "id": 5, "title": "Tenis React", "price": 199.9, "category_id": "tenis", "slug": "tenis-react"},
-     { "id": 6, "title": "Meias React 1", "price": 19.9, "category_id": "meias", "slug": "meias-react-1"},
-     { "id": 7, "title": "Meias React 2", "price": 19.9, "category_id": "meias", "slug": "meias-react-2"}
+      { "id": 1, "title": "T-shirt React", "price": 19.9, "category_id": "tshirt", "slug": "t-shirt-react"},
+      { "id": 2, "title": "T-shirt Next.js", "price": 21.9, "category_id": "tshirt", "slug": "t-shirt-next-js"},
+      { "id": 3, "title": "T-shirt Styled Components", "price": 25.9, "category_id": "tshirt", "slug": "t-shirt-styled-components"},
+      { "id": 4, "title": "Pants A", "price": 80.9, "category_id": "pants", "slug": "pants-a"},
+      { "id": 5, "title": "Pants B", "price": 70.9, "category_id": "pants", "slug": "pants-b"},
+      { "id": 6, "title": "Pants C", "price": 90.9, "category_id": "pants", "slug": "pants-c"},
+      { "id": 7, "title": "Sneakers 1", "price": 100.9, "category_id": "sneakers", "slug": "sneakers-1"},
+      { "id": 8, "title": "Sneakers 2", "price": 120.9, "category_id": "sneakers", "slug": "sneakers-2"},
+      { "id": 9, "title": "Sneakers 3", "price": 110.9, "category_id": "sneakers", "slug": "sneakers-3"}
    ],
    "recommended": [
-     { "id": 1, "title": "Camiseta Front-end", "price": 79.9, "category_id": "camisetas", "slug": "camiseta-front-ends"},
-     { "id": 4, "title": "Calça azul do React", "price": 109.9, "category_id": "calcas", "slug": "calca-azul-react"}
+      { "id": 2, "title": "T-shirt Next.js", "price": 21.9, "category_id": "tshirt", "slug": "t-shirt-next-js"},
+      { "id": 4, "title": "Pants A", "price": 80.9, "category_id": "pants", "slug": "pants-a"},
+      { "id": 7, "title": "Sneakers 1", "price": 100.9, "category_id": "sneakers", "slug": "sneakers-1"}
    ]
  }
